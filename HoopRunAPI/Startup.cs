@@ -28,7 +28,7 @@ namespace HoopRunAPI
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<HoopRunAPIContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("LocalContext"),
+                options.UseSqlServer(Configuration.GetConnectionString("HoopRunAPIContext"),
                     sqlServerOptionsAction: sqlOptions =>
                     {
                         sqlOptions.EnableRetryOnFailure(

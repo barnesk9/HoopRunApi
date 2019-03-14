@@ -8,14 +8,14 @@ namespace HoopRunAPI.Controllers
 {
     [Route("api/[controller]")]
     [Route("api/")]
-    [Route("/")]
+    [Route("")]
     [ApiController]
 
     public class WelcomeController : Controller
     {
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "Welcome to the API"};
+            return new string[] {"Welcome to the API"};
         }
     }
 }
